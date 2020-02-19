@@ -19,6 +19,10 @@ module.exports = ({repo, version}) => {
         },
         files: [
             {
+                path: '.gitignore',
+                content: '.next\nnode_modules'
+            },
+            {
                 path: 'pages/api/data.ts',
                 content: `export default function(req, res) {
     res.send(Date.now());
